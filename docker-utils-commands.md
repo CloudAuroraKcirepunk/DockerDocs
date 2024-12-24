@@ -1,4 +1,4 @@
-# Databases Simple Command Docker
+# Docker Utils Commands
 
 **PostgreSQL Simple**
 ```powershell
@@ -22,4 +22,9 @@ docker run -dp 27017:27017 --name mongodb_container -e MONGO_INITDB_ROOT_USERNAM
 **Redis**
 ```powershell
 docker run -dp 6379:6379 --name redis_container redis
+```
+
+**Jenkins**
+```powershell
+docker run -d -p 8081:8080 -p 50000:50000 --name jenkins_container -v jenkins_volume:/var/jenkins_home jenkins/jenkins:lts-jdk17
 ```
